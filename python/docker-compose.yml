@@ -8,7 +8,4 @@ services:
      image: python:3.8.1
      hostname: python
      volumes:
-       - "python_data:/work"
-volumes:
-  python_data:
-
+       - ./python_data:/work
