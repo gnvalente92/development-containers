@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+   python:
+     build:
+        context: .
+        dockerfile: Dockerfile
+     image: python:3.8.1
+     hostname: python
+     volumes:
+       - "python_data:/work"
+volumes:
+  python_data:
+
